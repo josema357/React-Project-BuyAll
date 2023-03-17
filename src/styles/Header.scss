@@ -1,0 +1,95 @@
+@use 'vars';
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid vars.$text-input-field;
+}
+.menu{
+    display: none;
+}
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav-logo img{
+    width: 20px;
+}
+.nav-logo p{
+    font-weight: bold;
+    font-size: 0.5em;
+    letter-spacing: 3px;
+    color: vars.$blue-face;
+    margin: 0;
+}
+.navbar-left,
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+.navbar-left ul{
+    margin-left: 12px;
+}
+.navbar-left ul,
+.navbar-right ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.navbar-left ul li a,
+.navbar-right ul li a{
+    text-decoration: none;
+    color: vars.$text-link;
+    border: 1px solid vars.$white;
+    padding: 8px;
+    border-radius: 8px;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover{
+    border: 1px solid vars.$blue-face;
+    color: vars.$blue-face;
+    font-weight: 500;
+}
+.navbar-email{
+    color: vars.$text-link;
+    font-size: vars.$sm;
+    margin-right: 12px;
+}
+.navbar-shopping-cart{
+    position: relative;
+}
+.navbar-shopping-cart div{
+    width: 16px;
+    height: 16px;
+    background-color: vars.$blue-face;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width: 710px){
+    .menu{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-email{
+        display: none;
+    }
+}
