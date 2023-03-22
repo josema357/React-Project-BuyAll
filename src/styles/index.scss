@@ -1,6 +1,25 @@
+@use 'vars';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 
 body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+}
+/*-----------LOGO------------*/
+.container-logo {
+	width: 100%;
+	margin-bottom: 48px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.container-logo img{
+	width: 40px;
+}
+.container-logo span{
+	font-weight: bold;
+    font-size: vars.$md;
+    letter-spacing: 3px;
+    color: vars.$blue-face;
 }
