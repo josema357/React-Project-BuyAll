@@ -16,7 +16,7 @@ const Login = () => {
 					<input type="text" name="email" placeholder="example@example.com" className="input input-email" />
 					<label htmlFor="password" className="label">Password</label>
 					<input type="password" name="password" placeholder="*********" className="input input-password" />
-					<button type="submit" className="login-button">Log in</button>
+					<button type="submit" className="primary-button login-button">Log in</button>
 					<a id='forgot' href="/recovery-password">Forgot my password</a>
 				</form>
 				<button className="signup-button">Sign up</button>

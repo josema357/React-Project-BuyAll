@@ -10,19 +10,19 @@ nav{
 }
 .menu{
     display: none;
+    cursor: pointer;
 }
 .nav-logo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
 }
 .nav-logo img{
     width: 20px;
 }
 .nav-logo p{
     font-weight: bold;
-    font-size: 0.5em;
+    font-size: 10px;
     letter-spacing: 3px;
     color: vars.$blue-face;
     margin: 0;
@@ -60,10 +60,12 @@ nav{
 }
 .navbar-email{
     color: vars.$text-link;
-    font-size: vars.$sm;
+    font-size: 12px;
     margin-right: 12px;
+    cursor: pointer;
 }
 .navbar-shopping-cart{
+    cursor: pointer;
     position: relative;
 }
 .navbar-shopping-cart div{
@@ -71,7 +73,7 @@ nav{
     height: 16px;
     background-color: vars.$blue-face;
     border-radius: 50%;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     position: absolute;
     top: -6px;
@@ -81,8 +83,7 @@ nav{
     align-items: center;
     color: white;
 }
-
-@media (max-width: 710px){
+@media (max-width: 750px){
     .menu{
         display: block;
     }
@@ -90,6 +91,11 @@ nav{
         display: none;
     }
     .navbar-email{
+        display: none;
+    }
+}
+@media (max-width: 200px ){
+    .nav-logo{
         display: none;
     }
 }
