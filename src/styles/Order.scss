@@ -1,2 +1,34 @@
 @use 'vars';
 
+.Order {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 12px;
+	background-color: vars.$text-input-field;
+	padding: 10px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.Order div:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.Order div span:nth-child(1) {
+	font-size: vars.$md;
+	font-weight: bold;
+}
+.Order div span:nth-child(2) {
+	font-size: vars.$sm;
+	color: vars.$text-link;
+}
+.Order div:nth-child(2) {
+	font-weight: bold;
+}
+@media(max-width:280px){
+    .Order{
+        padding: 10px 5px;
+        flex-direction: column;
+    }
+}

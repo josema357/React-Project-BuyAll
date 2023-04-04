@@ -6,16 +6,16 @@ const PasswordRecovery = () => {
 	return (
 		<div className="PasswordRecovery">
 			<div className="PasswordRecovery-container">
-				<div className='container-logo'>
+				<div className='container-logo-global'>
 					<img src={logo} alt="logo"/>
 					<span >BUYALL</span>
 				</div>
 				<h1 className="title-recovery">Password recovery</h1>
-				<p className="subtitle">Inform the email address used to create your account</p>
-				<form action="/" className="form">
-					<label htmlFor="email" className="label">Email address</label>
-					<input type="text" id="email" className="input input-email" />
-					<input type="submit" value="Confirm" className="primary-button login-button" />
+				<p className="subtitle-recovery">Inform the email address used to create your account</p>
+				<form action="/login" className="form-global">
+					<label htmlFor="email" className="label-global">Email address</label>
+					<input type="text" id="email" className="input-global input-email-global" />
+					<input type="submit" value="Confirm" className="primary-button-global btn-button-global"/>
 				</form>
 			</div>
 		</div>

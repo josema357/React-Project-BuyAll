@@ -9,8 +9,8 @@ const OrderItem = () => {
 			<figure>
 				<img src="https://img.remediosdigitales.com/a49704/red-bull-y-bmc-crean-la-bicicleta-de-carretera-mas-rapida-del-mundo004/1366_2000.jpeg" alt="bici" />
 			</figure>
-			<p>Bicicleta</p>
-			<p>$ 200.00</p>
+			<p>Bicicletaeeffdfddfdfddfdf</p>
+			<p>$200000.00</p>
 			<img src={close} alt="close"/>
 		</div>
 	);

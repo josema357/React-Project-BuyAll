@@ -1,2 +1,47 @@
 @use 'vars';
 
+.OrderItem {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+	align-items: center;
+}
+figure{
+	margin: 0;
+}
+.OrderItem figure img {
+	width: 100%;
+	height: 100%;
+	max-width: 70px;
+	max-height: 70px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+.OrderItem p:nth-child(2) {
+	max-width: 100px;
+	color: vars.$text-link;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.OrderItem p:nth-child(3) {
+	max-width: 100px;
+	font-size: vars.$md;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+@media(max-width:230px){
+	figure {
+		display: none;
+	}
+} 
+@media(max-width:170px){
+	.OrderItem p:nth-child(3) {
+		width: 50px;
+	}
+	.OrderItem p:nth-child(2) {
+		width: 70px;
+	}
+}

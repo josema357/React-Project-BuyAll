@@ -4,20 +4,20 @@ import logo from '../assets/logos/bag-fill.svg'
 
 const NewPassword = () => {
   return (
-    <div className="login">
-        <div className="form-container">
-            <div className="logo">
+    <div className="New-Pass">
+        <div className="form-container-newpass">
+            <div className="container-logo-global">
                 <img src={logo} alt="logo"/>
                 <span >BUYALL</span>
             </div>
-            <h1 className="title">Create a new password</h1>
-            <p className="subtitle">Enter a new password for your account</p>
-            <form action="" className="form">
-                <label htmlFor="password" className="label">Password</label>
-                <input type="password" id="password" placeholder="**********" className="input input-pass"/>
-                <label htmlFor="repeat-password" className="label">Password</label>
-                <input type="password" id="repeat-password" placeholder="**********" className="input input-repeat-pass"/>
-                <input type="submit" value="Confirm" className="primary-button login-button"/>
+            <h1 className="title-newpass">Create a new password</h1>
+            <p className="subtitle-newpass">Enter a new password for your account</p>
+            <form action="/login" className="form-global">
+                <label htmlFor="password" className="label-global">Password</label>
+                <input type="password" id="password" placeholder="**********" className="input-global input-pass"/>
+                <label htmlFor="repeat-password" className="label-global">Password</label>
+                <input type="password" id="repeat-password" placeholder="**********" className="input-global input-repeat-pass"/>
+                <input type="submit" value="Confirm" className="primary-button-global btn-button-global"/>
             </form>
         </div>
     </div>

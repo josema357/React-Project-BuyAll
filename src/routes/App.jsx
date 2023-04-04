@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import '../styles/index.scss'
+import '../styles/global.scss'
 import Home from "../pages/Home"
 import Login from "../pages/Login"
 import PasswordRecovery from "../pages/PasswordRecovery"
