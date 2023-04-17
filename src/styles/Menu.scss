@@ -1,9 +1,10 @@
-@import 'vars';
+@use 'vars';
 
 .Menu {
 	width: 100px;
 	height: auto;
-	border: 1px solid var(--gray);
+	background-color: white;
+	border: 1px solid vars.$gray;
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
 	position: absolute;
@@ -24,15 +25,20 @@
 }
 .Menu ul li:last-child {
 	padding-top: 20px;
-	border-top: 1px solid var(--gray);
+	border-top: 1px solid vars.$gray;
 }
 .Menu ul li:last-child a {
-	color: var(--blue-face);
-	font-size: var(--sm);
+	color: vars.$blue-face;
+	font-size: vars.$sm;
 }
 .Menu ul li a {
-	color: var(--black);
+	color: vars.$black;
 	text-decoration: none;
 	margin-bottom: 20px;
 	display: inline-block;
+}
+@media(max-width:710px){
+	.Menu{
+		display: none;
+	}
 }

@@ -1,0 +1,50 @@
+@use 'vars';
+
+.Mobile-Menu{
+    background-color: vars.$white;
+    padding: 24px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 61px);
+    box-sizing: border-box;
+    position: absolute;
+    top: 61px;
+}
+.Mobile-Menu a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+.Mobile-Menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 24px;
+}
+.Mobile-Menu ul:nth-child(1){
+    border-bottom: 1px solid vars.$text-input-field;
+    padding-bottom: 24px;
+}
+.Mobile-Menu ul:nth-child(2){
+    margin: 0;
+}
+.Mobile-Menu ul li{
+    margin-bottom: 24px;
+}
+.email-mobile{
+    font-size: 12px;
+    font-weight: 200 !important;
+    word-wrap: break-word;
+}
+.sign-out-mobile{
+    color: vars.$blue-face !important;
+    font-size: 15px;
+}
+@media(min-width:710px){
+	.Mobile-Menu{
+		display: none;
+	}
+}
